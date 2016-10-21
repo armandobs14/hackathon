@@ -5,4 +5,5 @@ var app = angular.module('App', [
 ]);
 
 //= include ../config/routes.js
+//= include ../config/firebase.js
 //= include HomeCtrl.js

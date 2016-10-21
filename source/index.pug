@@ -5,12 +5,13 @@ html.no-js
     // TODO Adicionar meta tags (titulo, utf8, favicon...)
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href=manifest['css/styles.css'])
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
 
   body(ng-app='App', ng-cloak, layout="column")
-    include states/partials/toolbar
+    include partials/toolbar
     
-    ui-view(flex)
-      | Loading...
+    md-content(flex)
+      ui-view Loading...
 
     include states/home
 

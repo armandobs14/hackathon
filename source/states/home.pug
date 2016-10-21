@@ -4,3 +4,20 @@ script#home(type='text/ng-template')
 
   h1 Home
   p {{msg}}
+
+  div(ng-show="incidents", ng-repeat="incident in incidents")
+    md-card
+      img.md-card-image(src="incident.image", alt='Washed Out')
+      md-card-title
+        md-card-title-text
+          span.md-headline Title
+      md-card-content
+        p Descrição
+      md-card-actions(layout='row', layout-align='end center')
+        md-button Vote Up
+        md-button Vote Down
+
+  md-button.md-fab.md-primary(aria-label='Novo Incidente')
+    md-icon.material-icons add
+
+
