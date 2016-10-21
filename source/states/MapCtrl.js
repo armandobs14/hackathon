@@ -1,3 +1,3 @@
-app.controller('Home.Controller', function ($scope) {
-  $scope.msg = 'Hello World';
+app.controller('Map.Controller', function ($scope) {
+  $scope.msg = 'Map';
 })

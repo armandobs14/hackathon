@@ -1,15 +1,23 @@
 doctype html
 html.no-js
   head
+
+    // TODO Adicionar meta tags (titulo, utf8, favicon...)
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href=manifest['css/styles.css'])
 
-  body
+  body(ng-app='App', ng-cloak, layout="column")
     include states/partials/toolbar
-    div(ng-app='App', ng-cloak)
-      ui-view
+    
+    ui-view(flex)
+      | Loading...
 
     include states/home
+
+    //- Initialize Firebase
+    script(src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js")
+    script.
+      firebase.initializeApp(!{JSON.stringify(firebaseConfig)});
 
     script(src=manifest['js/libs.js'])
     script(src=manifest['js/index.js'])

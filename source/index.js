@@ -4,4 +4,5 @@ var app = angular.module('App', [
   'ngMessages'
 ]);
 
-//= include routes.js
+//= include ../config/routes.js
+//= include HomeCtrl.js
