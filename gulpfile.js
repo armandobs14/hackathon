@@ -45,7 +45,7 @@ var buildPaths = {
 var watchPaths = {
   js: ['./source/**/*.js'],
   pug: ['./source/**/*.pug'],
-  scss: ['./source/scss/**/*.scss'],
+  scss: ['./source/**/*.scss'],
   images: ['./source/images/**/*.*'],
   misc: ['./source/misc/**/*.*']
 };
