@@ -10,24 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ThadeuLuz/hackathon.git"
   },
-  "keywords": [
-    "npm",
-    "i",
-    "-S",
-    "gulp-rev",
-    "del",
-    "gulp",
-    "gulp-jade",
-    "gulp-sass",
-    "gulp-if",
-    "gulp-uglify",
-    "gulp-rename",
-    "gulp-include",
-    "gulp-ng-annotate",
-    "serve-static",
-    "gulp-run-sequence",
-    "gulp-autoprefixer"
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -49,7 +32,6 @@
     "gulp-run-sequence": "^0.3.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
-    "se": "0.0.1",
     "serve-static": "^1.11.1"
   }
 }

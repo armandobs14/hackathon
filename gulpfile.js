@@ -114,7 +114,7 @@ gulp.task('pug', function () {
   return gulp.src(buildPaths.pug)
     .pipe(pug({
       pretty: !PRODUCTION,
-      locals: {gulp,
+      locals: {
         // eslint-disable-next-line
         manifest: manifest || {},
         production: PRODUCTION,
