@@ -58,8 +58,8 @@ gulp.task('js', function () {
   return gulp.src(buildPaths.js)
     .pipe(include({
       includePaths: [
-        path.join(__dirname, '/source/states'),
         path.join(__dirname, '/bower_components'),
+        path.join(__dirname, '/source/states'),
       ]
     }))
     .on('error', console.error) // eslint-disable-line

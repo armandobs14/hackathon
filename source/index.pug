@@ -6,7 +6,9 @@ html.no-js
 
   body
     div(ng-app='App', ng-cloak)
-      h1 {{1+2}}
+      ui-view
+
+    include states/home
 
     script(src=manifest['js/libs.js'])
     script(src=manifest['js/index.js'])

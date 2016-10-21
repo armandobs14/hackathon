@@ -6,9 +6,13 @@
   </head>
   <body>
     <div ng-app="App" ng-cloak>
-      <h1>{{1+2}}</h1>
+      <ui-view></ui-view>
     </div>
+    <script id="home" type="text/ng-template">
+      <h1>Home</h1>
+      <p>{{msg}}</p>
+    </script>
     <script src="js/libs-093ee2a550.js"></script>
-    <script src="js/index-0be85d225a.js"></script>
+    <script src="js/index-3b8ec6cbf9.js"></script>
   </body>
 </html>
