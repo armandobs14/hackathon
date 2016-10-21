@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles-e997c5d0ac.css">
+  </head>
+  <body>
+    <md-toolbar class="md-hue-2">
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+          <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+        </md-button>
+        <h2><span>Toolbar with Disabled/Enabled Icon Buttons</span></h2><span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+          <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <div ng-app="App" ng-cloak>
+      <ui-view></ui-view>
+    </div>
+    <script id="home" type="text/ng-template">
+      <h1>Home</h1>
+      <p>{{msg}}</p>
+    </script>
+    <script src="js/libs-093ee2a550.js"></script>
+    <script src="js/index-38a69d775a.js"></script>
+  </body>
+</html>
