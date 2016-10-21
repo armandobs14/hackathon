@@ -1,0 +1,22 @@
+{
+  "name": "hackathon",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Thadeu Luz <thadeuluz@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ThadeuLuz/hackathon",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "angular-material": "^1.1.1",
+    "angular-ui-router": "^0.3.1"
+  }
+}

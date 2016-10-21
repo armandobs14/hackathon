@@ -1,0 +1,12 @@
+doctype html
+html.no-js
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href=manifest['css/styles.css'])
+
+  body
+    div(ng-app='App', ng-cloak)
+      h1 {{1+2}}
+
+    script(src=manifest['js/libs.js'])
+    script(src=manifest['js/index.js'])

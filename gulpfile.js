@@ -35,16 +35,16 @@ var FIREBASECONFIG_DEVELOPMENT = {
 var FIREBASECONFIG_PRODUCTION = FIREBASECONFIG_DEVELOPMENT;
 
 var buildPaths = {
-  js: ['./source/states/*.js'],
-  pug: ['./source/states/*.pug'],
-  scss: ['./source/scss/*.scss'],
+  js: ['./source/*.js'],
+  pug: ['./source/*.pug'],
+  scss: ['./source/*.scss'],
   images: ['./source/images/**/*.*'],
   misc: ['./source/misc/**/*.*']
 };
 
 var watchPaths = {
-  js: ['./source/states/**/*.js'],
-  pug: ['./source/states/**/*.pug'],
+  js: ['./source/**/*.js'],
+  pug: ['./source/**/*.pug'],
   scss: ['./source/scss/**/*.scss'],
   images: ['./source/images/**/*.*'],
   misc: ['./source/misc/**/*.*']
@@ -58,8 +58,8 @@ gulp.task('js', function () {
   return gulp.src(buildPaths.js)
     .pipe(include({
       includePaths: [
-        path.join(__dirname, '/bower_states'),
-        path.join(__dirname, '/source/states')
+        path.join(__dirname, '/source/states'),
+        path.join(__dirname, '/bower_components'),
       ]
     }))
     .on('error', console.error) // eslint-disable-line
