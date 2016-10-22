@@ -14,11 +14,12 @@ html.no-js
       ui-view Loading...
 
     include states/home
+    include states/map
 
     //- Initialize Firebase
     script(src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js")
     script.
       firebase.initializeApp(!{JSON.stringify(firebaseConfig)});
-
+    script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyAZDCuKmaicPAphJl3oBQ31IXWt-bnIoC4")
     script(src=manifest['js/libs.js'])
     script(src=manifest['js/index.js'])

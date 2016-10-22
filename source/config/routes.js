@@ -6,6 +6,12 @@ app.config(function ($urlRouterProvider, $stateProvider) {
       url: '/',
       controller: 'Home.Controller',
       templateUrl: 'home'
-    });
+    })
+    .state('map', {
+      url: '/map',
+      controller: 'Map.Controller',
+      templateUrl: 'map'
+    })
+    ;
 
 });

@@ -5,3 +5,5 @@
 //= include angular-messages/angular-messages.js
 //= include angular-material/angular-material.js
 //= include lodash/lodash.js
+//= include angular-simple-logger/dist/angular-simple-logger.js
+//= include angular-google-maps/dist/angular-google-maps.js

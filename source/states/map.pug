@@ -1,3 +1,4 @@
 script#map(type='text/ng-template')
-  h1 Home
-  p {{msg}}
+  ui-gmap-google-map(center="map.center",zoom="map.zoom")
+    ui-gmap-markers(models='markers', coords="'self'", icon="'icon'")
+
