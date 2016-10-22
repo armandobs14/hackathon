@@ -7,7 +7,7 @@ app.config(function ($urlRouterProvider, $stateProvider) {
       controller: 'Home.Controller',
       templateUrl: 'home'
     })
-    .state('map', {
+    .state('map/{lat}/{long}', {
       url: '/map',
       controller: 'Map.Controller',
       templateUrl: 'map'

@@ -1,23 +1,21 @@
 script#home(type='text/ng-template')
-  .hero(layout="column", layout-align="center center")
+  //.hero(layout="column", layout-align="center center")
     h1 Bem Vindo!
-
-  h1 Home
-  p {{msg}}
 
   div(ng-show="incidents", ng-repeat="incident in incidents")
     md-card
-      img.md-card-image(src="incident.image", alt='Washed Out')
       md-card-title
         md-card-title-text
-          span.md-headline Title
+          span.md-headline {{incident.title}}
       md-card-content
-        p Descrição
+        p {{incident.description}}
       md-card-actions(layout='row', layout-align='end center')
-        md-button Vote Up
-        md-button Vote Down
+        md-button Verdade
+        md-button Mentira
+        md-button.md-icon-button(aria-label='palce',ng-click="showOnMap(incident)")
+          md-icon.material-icons place
 
-  md-button.md-fab.md-primary(aria-label='Novo Incidente')
+  //md-button.md-fab.md-primary(aria-label='Novo Incidente')
     md-icon.material-icons add
 
 

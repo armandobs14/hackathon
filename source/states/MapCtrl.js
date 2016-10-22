@@ -1,27 +1,17 @@
-app.controller('Map.Controller', function ($scope) {
+app.controller('Map.Controller', function ($scope,$rootScope,Ref) {
   $scope.msg = 'Map';
-  $scope.map = { center: { latitude:-9.5503066, longitude: -35.6307039}, zoom: 16 };
-  $scope.markers = [
-	  {
-	  	id:1,
-	  	title:'Pratagy Beach All Inclusive Resort',
-	    latitude: -9.5503066,
-	  	longitude: -35.6307039
-	  },
-	  {
-	  	id:2,
-	    latitude: 44,
-	  	longitude: -73
-	  },
-	  {
-	  	id:3,
-	    latitude: 43,
-	  	longitude: -73
-	  },
-	  {
-	  	id:4,
-	    latitude: 42,
-	  	longitude: -73
-	  }
-  ];
+  /*var incidentsRef = Ref.child('incidents');
+
+  incidentsRef
+    .on('value', function () {
+      $timeout(function (snap) {
+        $scope.incidents = snap.val();
+      });
+  })
+
+  console.log($scope.incidents);
+  */
+  $scope.map = { center: { latitude:$rootScope.markers[0].latitude, longitude:$rootScope.markers[0].longitude}, zoom: 16 };
+  $scope.markers = $rootScope.markers;
+ 
 })
